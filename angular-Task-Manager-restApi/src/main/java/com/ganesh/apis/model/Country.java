@@ -1,8 +1,6 @@
 package com.ganesh.apis.model;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -10,12 +8,11 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name="country")
+@Table(name="countrys")
 public class Country {
 	
     @Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int countryId;
+	private Integer countryId;
 	private String countryName;
 
 }
