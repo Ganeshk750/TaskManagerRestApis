@@ -27,9 +27,9 @@ public class Project {
 	private boolean active;
 	private String status;
 	
-	@OneToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name="location")
-	private ClientLocation clientLocation;
+	//@OneToOne(cascade = CascadeType.ALL)
+	//@JoinColumn(name="location")
+	//private ClientLocation clientLocation;
 	
 	// Relation With ClientLocation
 

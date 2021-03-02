@@ -34,12 +34,12 @@ public class User {
      private String Gender;
      private boolean ReceiveNewsLetters;
      
-     @OneToOne(cascade = CascadeType.ALL)
-     @JoinColumn(name="country_id")
-     private Country countryID;
-     
-     @ManyToMany(mappedBy="user", cascade = CascadeType.ALL)
-     private Set<Skill> skills;
+   //  @OneToOne(cascade = CascadeType.ALL)
+   //  @JoinColumn(name="country_id")
+    // private Country countryID;
+   //  
+   //  @ManyToMany(mappedBy="user", cascade = CascadeType.ALL)
+   //  private Set<Skill> skills;
      
      
 

@@ -22,8 +22,8 @@ public class Skill {
 	//private String Id;
 	
 	// Relation with User
-	@ManyToMany(fetch = FetchType.LAZY)
-	private Set<User> user;
-	
+//	@ManyToMany(fetch = FetchType.LAZY)
+//	private Set<User> user;
+//	
 
 }
