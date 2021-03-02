@@ -18,6 +18,7 @@ public class DBOperationRunner implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
+		
 		clientLocation.saveAll(Arrays.asList(
 				   new ClientLocation(1, "Boston"),
 				   new ClientLocation(2, "New Delhi"),
@@ -27,7 +28,7 @@ public class DBOperationRunner implements CommandLineRunner {
 				   new ClientLocation(6, "Tokyo")
 				   
 				));
-		System.out.println("----------All Data saved into Database--------------");
+		System.out.println("----------All Client Location Data saved into Database--------------");
 		
 	}
 	
