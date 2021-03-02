@@ -11,11 +11,19 @@ import javax.persistence.Table;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
+
 @Entity
 @Table(name="projects")
+@NoArgsConstructor
+@AllArgsConstructor
+@Setter
+@Getter
 public class Project {
 	
 	@Id
@@ -27,10 +35,9 @@ public class Project {
 	private boolean active;
 	private String status;
 	
-	//@OneToOne(cascade = CascadeType.ALL)
-	//@JoinColumn(name="location")
-	//private ClientLocation clientLocation;
+	@OneToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name="location_id", referencedColumnName = "clientLocationId")
+	private ClientLocation clientLocation;
 	
-	// Relation With ClientLocation
-
+	
 }
