@@ -4,11 +4,14 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import lombok.Data;
+import lombok.*;
 
-@Data
 @Entity
 @Table(name="countories")
+@NoArgsConstructor
+@AllArgsConstructor
+@Setter
+@Getter
 public class Country {
 	
     @Id

@@ -26,8 +26,8 @@ public class ClientLocation {
 	private Integer clientLocationId;
 	private String clientLocationName;
 	
-//	 @OneToOne(mappedBy = "clientLocation")
-//	 private Project project;
+	// @OneToOne(mappedBy = "clientLocation")
+	// private Project project;
 	
 	
 }

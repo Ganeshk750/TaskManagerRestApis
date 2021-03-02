@@ -32,12 +32,13 @@ public class Project {
 	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	private Date dateOfStart;
 	private int teamSize;
-	private boolean active;
 	private String status;
-	
-	@OneToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name="location_id", referencedColumnName = "clientLocationId")
-	private ClientLocation clientLocation;
-	
-	
+	private boolean active;
+	public int ClientLocationId;
+
+	//@OneToOne(cascade = CascadeType.ALL)
+	//@JoinColumn(name="location_id", referencedColumnName = "clientLocationId")
+	//private ClientLocation clientLocationId;
+
+
 }
